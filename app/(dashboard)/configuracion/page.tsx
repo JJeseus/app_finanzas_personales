@@ -17,7 +17,7 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog'
 import { useToast } from '@/hooks/use-toast'
-import { resetAllData } from '@/lib/data-service'
+// import { resetAllData } from '@/lib/data-service'
 import { Settings, Moon, Sun, Trash2, RefreshCw, Database, Shield } from 'lucide-react'
 
 export default function ConfiguracionPage() {
@@ -28,7 +28,7 @@ export default function ConfiguracionPage() {
   const isDarkMode = theme === 'dark'
 
   const handleResetData = () => {
-    resetAllData()
+    // resetAllData()
     setShowResetDialog(false)
     toast({
       title: 'Datos reiniciados',
